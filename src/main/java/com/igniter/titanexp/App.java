@@ -11,13 +11,11 @@ public class App
 {
     public static void main( String[] args )
     {
+    
     	TitanGraph g = TitanFactory.open("/tmp/titan");
-    	Vertex juno = g.addVertex(null);
-    	juno.setProperty("name", "juno");
-    	Vertex jupiter = g.addVertex(null);
-    	jupiter.setProperty("name", "jupiter");
-    	Edge married = g.addEdge(null, juno, jupiter, "married");
-    	
-    	System.out.print(married);
+    	System.out.println(g.getIndexedKeys(Vertex.class));
+    	Vertex pluto = g.getVertices("name","pluto").iterator().next();
+
+    	System.out.print(pluto);
     }
 }

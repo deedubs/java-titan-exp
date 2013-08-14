@@ -23,7 +23,7 @@
     </dependency>
     <dependency>
     	<groupId>com.thinkaurelius.titan</groupId>
-    	<artifactId>titan-core</artifactId>
+    	<artifactId>titan-all</artifactId>
     	<version>0.3.2</version>
     </dependency>
   </dependencies>
